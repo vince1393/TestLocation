@@ -6,16 +6,22 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct ContentView: View {
+    var locations: [Location]
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List {
+            ForEach(locations, id: \.self) { location in
+                Text("[\(location.date.formatted(date: .abbreviated, time: .standard))]  \(location.location.coordinate.latitude), \(location.location.coordinate.longitude)")
+            }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(locations: [])
     }
 }

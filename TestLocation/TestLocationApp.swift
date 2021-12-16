@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct TestLocationApp: App {
+    @ObservedObject var manager = LocationManager.shared
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(locations: manager.locations)
         }
     }
 }

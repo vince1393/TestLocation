@@ -11,6 +11,7 @@
 		9DB0D30F276AB82F00656902 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB0D30E276AB82F00656902 /* ContentView.swift */; };
 		9DB0D311276AB83200656902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB0D310276AB83200656902 /* Assets.xcassets */; };
 		9DB0D314276AB83200656902 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB0D313276AB83200656902 /* Preview Assets.xcassets */; };
+		9DB0D31B276AB85700656902 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB0D31A276AB85700656902 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		9DB0D30E276AB82F00656902 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9DB0D310276AB83200656902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DB0D313276AB83200656902 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DB0D31A276AB85700656902 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		9DB0D31C276ABBD300656902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +54,12 @@
 		9DB0D30B276AB82F00656902 /* TestLocation */ = {
 			isa = PBXGroup;
 			children = (
+				9DB0D31C276ABBD300656902 /* Info.plist */,
 				9DB0D30C276AB82F00656902 /* TestLocationApp.swift */,
 				9DB0D30E276AB82F00656902 /* ContentView.swift */,
 				9DB0D310276AB83200656902 /* Assets.xcassets */,
 				9DB0D312276AB83200656902 /* Preview Content */,
+				9DB0D31A276AB85700656902 /* LocationManager.swift */,
 			);
 			path = TestLocation;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			files = (
 				9DB0D30F276AB82F00656902 /* ContentView.swift in Sources */,
 				9DB0D30D276AB82F00656902 /* TestLocationApp.swift in Sources */,
+				9DB0D31B276AB85700656902 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +278,9 @@
 				DEVELOPMENT_TEAM = 7QBM44JQ8H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestLocation/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Testing stuff";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Also Testing stuff";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +310,9 @@
 				DEVELOPMENT_TEAM = 7QBM44JQ8H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestLocation/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Testing stuff";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Also Testing stuff";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
